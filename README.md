@@ -1,51 +1,11 @@
 # Simplecalculator
+Description:
 
-//simple calculator using C
+Simple Calculator is a C language-based application used for performing all the simple arithmetic operations like addition, multiplication, division, and subtraction. The application can be made using basic knowledge of C like if-else statements, loops, etc. The functionalities of the application are mentioned below:
 
-#include <stdio.h>
-
-#include <stdlib.h>
-
-int main(){
-char ch;
-	double a, b;
-	while (1) {
-	printf("Enter an operator (+, -, *, /),"if want to exit press x: ");
-	scanf(" %c", &ch);
-
-		if (ch == 'x')
-			exit(0);
-		printf("Enter two first and second operand: ");
-		scanf("%lf %lf", &a, &b);
-
-		switch (ch) {
-
-		// For Addition
-		case '+':
-			printf("%.1lf + %.1lf = %.1lf\n", a, b, a + b);
-			break;
-
-		// For Subtraction
-		case '-':
-			printf("%.1lf - %.1lf = %.1lf\n", a, b, a - b);
-			break;
-
-		// For Multiplication
-		case '*':
-			printf("%.1lf * %.1lf = %.1lf\n", a, b, a * b);
-			break;
-
-		// For Division
-		case '/':
-			printf("%.1lf / %.1lf = %.1lf\n", a, b, a / b);
-			break;
-
-		// If operator doesn't match any case constant
-		default:
-			printf(
-				"Error! please write a valid operator\n");
-		}
-
-		printf("\n");
-	}
-}
+1. Addition
+2. Subtraction
+3. Multiplication
+4. Division
+5. Logarithmic values
+6. Square roots
